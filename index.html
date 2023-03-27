@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Event Tickets Order Form</title>
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">		
+	</head>
+
+	<body>
+		<div id="frame">
+			<header>
+				<img src="images/ornament-logo.png" alt="New Year Central Logo" style="width: 400px;">
+				<div id="header-line-1">New Year Central</div>
+				<div id="header-line-2">For the child in all of us!</div>
+			</header>
+
+			<!-- navigation starts -->
+			<nav id="nav_menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="products.html">Our Products</a></li>
+					<li><a href="tickets_order_form.html" class="current">Event Tickets</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<aside>
+				<div class="sidebar-title">Products of The Week...</div>
+				<ul>
+					<li><a href="assets/products/berry-garland.html">Natural Holly Berry Garland, 5f - $74.99</a></li>
+					<li><a href="assets/products/artificial-red-berry-garland.html">Artificial Red Berry and White Edge Holly Leaf Christmas Garland, 5.5f - $38.99</a></li>
+					<li><a href="assets/products/christmas-berries-stems.html">Christmas Berries Red Stems Evergreen Pine Branches, 8pcs - $15.99</a></li>
+				</ul>
+			</aside>
+			
+			<main>
+				<fieldset>
+					<div class = "container">
+					<div class = "info">
+					
+					<legend>Member Information</legend>
+					<label for="email">Email*</label>
+					<p><input type="email" id="email" name="email" placeholder="example@example.com" required></p>
+					<label for="first_name">First Name*</label></p>
+					<p><input type="text" id="first_name" name="first_name" placeholder="John" required></p>
+					<label for="last_name">Last Name*</label></p>
+					<p><input type="text" id="last_name" name="last_name" placeholder="Doe" required></p>
+					<label for="phone">Phone Number</label></p></p>
+					<p><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="999-999-9999"></p>
+					<label for="city">City</label></p>
+					<p><input type="text" id="city" name="city" placeholder="Toronto">
+					<label for="province">Province*</label></p>
+					<p><input type="text" id="province" name="province" pattern="[A-Za-z]{2}" placeholder="ON" required></p>
+					<label for="postal_code">Postal Code*</label></p>
+					<p><input type="text" id="postal_code" name="postal_code" pattern="[A-Za-z0-9]{6}" placeholder="A1B2C3" required></p>
+				</fieldset>
+		 </div>
+				<fieldset>
+				<div class = "container">
+					<div class = "info">
+					
+					<legend>Ordering Information</legend>
+					<p><label for="event">Event*</label></p>
+					<p><select id="event" name="event" required>
+						<option value="" selected disabled>Select an event</option>
+						<option value="cookie">Cookie Decoration Contest</option>
+						<option value="tree">Tree Decoration Contest</option>
+						<option value="ride">Gift of Light Ride-Along</option>
+						<option value="breakfast">Breakfast with Santa</option>
+					</select>
+					<p><label for="order_type">Order Type*</label></p>
+					<select id="order_type" name="order_type" required>
+						<option value="" selected disabled>Select an order type</option>
+						<option value="member">Member Package</option>
+						<option value="donor">Donor Package</option>
+						<option value="single">Single Tickets</option>
+					</select>
+					<p><label for="number_of_tickets">Number of Tickets*</label></p>
+					<input type="number" id="number_of_tickets" name="number_of_tickets" required>
+				</fieldset>
+				 </div>
+				<fieldset>
+				<div class = "container">
+					<div class = "info">
+					
+					<p><legend>Payment Information</legend></p>
+					<div>
+					  <label for="credit_card">Bill Me</label>
+					  <input type="radio" id="bill_me" name="payment_method" value="bill_me">
+					</div>
+					<div>
+					  <label for="paypal">Credit Card</label>
+					  <input type="radio" id="credit_card" name="payment_method" value="credit_card">
+					</div>
+				  </fieldset>
+				  
+		
+				<fieldset>
+				<div class = "container">
+					<div class = "info">
+					
+					<p><legend>Payment Information</legend></p>
+					<label for="card_type">Card Type*</label>
+					<select id="card_type" name="card_type" required>
+						<option value="" selected disabled>Select a card type</option>
+						<option value="visa">Visa</option>
+						<option value="mastercard">Master Card</option>
+						<option value="discover">Discover</option>
+					</select>
+					<p><label for="card_number">Card Number*</label></p>
+					<input type="text" id="card_number" name="card_number" pattern="["[0-9]{16}" placeholder="1234567890123456" required>
+					<label for="card_name">Name on Card*</label>
+					<input type="text" id="card_name" name="card_name" placeholder="John Doe" required>
+					<label for="card_expiry">Expiry Date*</label>
+					<input type="month" id="card_expiry" name="card_expiry" required>
+					<label for="card_cvv">CVV*</label>
+					<input type="text" id="card_cvv" name="card_cvv" pattern="["[0-9]{3}" placeholder="123" required>
+					 </div>
+				</fieldset>
+				<fieldset>
+				<div class = "container">
+					<div class = "info">
+					
+				 <p><form class="first-form"></p>
+						<h2>Submit Your Order</h2>
+						<label for="firstName"></label>
+						<button type= "button" onclick= choose company>
+							Submit</button>
+											<button type= "button" onclick= choose company>
+							Reset Field</button>
+					  </form>
+					   </div>
+					  </fieldset>
+		
+		  </div>
+		</body>
+		
+		</html>		
+			
